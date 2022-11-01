@@ -26,7 +26,7 @@ public class ProductsService {
       return  productsRepo.findAll();
     }
 
-    public Products getProduct(Integer productCode){
+    public List<Products> getProduct(Integer productCode){
         return productsRepo.findByProductCode(productCode);
     }
 }
