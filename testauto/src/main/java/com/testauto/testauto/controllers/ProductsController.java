@@ -27,7 +27,7 @@ public class ProductsController {
     }
 
     @GetMapping("product")
-    public ResponseEntity<Products> getProduct(@RequestParam("productCode") Integer productCode){
+    public ResponseEntity<Products> getProduct(@RequestParam Integer productCode){
         return ResponseEntity.ok(productsService.getProduct(productCode));
     }
 }
